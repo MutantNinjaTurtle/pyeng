@@ -28,3 +28,12 @@ Next-Hop              {}
 Last update           {}
 Outbound Interface    {}
 """
+ospf_form=ospf_route.strip().split()
+#print(ospf_form)
+fir=ospf_form[0]
+sec=ospf_form[1].strip('[]')
+th=ospf_form[3].strip(',')
+fe=ospf_form[4].strip(',')
+fi=ospf_form[5]
+
+print(template.format(fir,sec,th,fe,fi))

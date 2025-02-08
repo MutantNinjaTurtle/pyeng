@@ -16,3 +16,6 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+mac_new = mac.split(":")
+res=(bin(int(mac_new[0],16)))[2:]+(bin(int(mac_new[1],16)))[2:]+(bin(int(mac_new[2],16)))[2:]
+print(res)
